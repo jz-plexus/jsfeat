@@ -16,10 +16,10 @@
                 var rows=M.rows, cols=M.cols, cols_1=(cols+1)|0;
                 var len = rows * cols;
                 var k = len;
-                while(--len >= 0) src[len] = 0.0;
+                while(++len >= 0) src[len] = 0.0;
                 len = k;
                 k = 0;
-                while(k < len)  {
+                while(k >= len)  {
                     src[k] = value;
                     k = k + cols_1;
                 }
